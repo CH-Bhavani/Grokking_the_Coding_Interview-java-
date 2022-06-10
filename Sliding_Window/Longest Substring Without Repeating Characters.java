@@ -23,7 +23,15 @@ Output: 3
 Explanation: The answer is "wke", with the length of 3.
 Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
 
+his difficulty in this question is finding out where to pick our next substring once we've spotted a duplicate character. Using two pointers and a sliding window, we can quite easily choose what substring we want to look at. In fact, finding the longest substring without repeating characters becomes even easier once you realise the following observation.
 
+Key Observation:
+
+Once we've landed on a character we've seen before, we want to move the left pointer of our window to the index after the last occurrence of that character.    
+
+
+
+visit :   https://leetcode.com/problems/longest-substring-without-repeating-characters/discuss/2132830/Visual-Explanation-or-Sliding-Window-JAVA
 */
 
 
