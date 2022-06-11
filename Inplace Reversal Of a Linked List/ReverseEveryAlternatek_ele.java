@@ -20,7 +20,7 @@ class ListNode {
         this.value = value;
     }
 }
-class ReverseEveryKElements {
+class ReverseEveryAdjKElements {
     public static ListNode reverse(ListNode head, int k) {
         if(k<=1 || head==null)
             return head;
@@ -57,7 +57,7 @@ class ReverseEveryKElements {
         head.next.next.next.next.next = new ListNode(6);
         head.next.next.next.next.next.next = new ListNode(7);
         head.next.next.next.next.next.next.next = new ListNode(8);
-        ListNode result = ReverseEveryKElements.reverse(head, 2);
+        ListNode result = ReverseEveryAdjKElements.reverse(head, 2);
         System.out.print("Nodes of the reversed LinkedList are: ");
         while (result != null) {
             System.out.print(result.value + " ");
